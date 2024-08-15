@@ -111,6 +111,7 @@ def play():
 # Game over function
 def die():
     obstacle.hideturtle()
+    boat.hideturtle()
     score.goto(0, 0)
     score.write(f"Game Over!  Score: {scoreNum}", align="center", font=("Courier", 24, "normal"))
     screen.update()
