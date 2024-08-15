@@ -36,6 +36,9 @@ obstacle.shape("rock.gif")
 obstacle.penup()
 obstacle.goto(0, 300)
 
+def pressP():
+    screen.bye()
+
 # Boat movement functions
 def moveBoatLeft():
     x = boat.xcor()
@@ -129,6 +132,7 @@ def init():
     screen.onkey(moveBoatLeft, "a")
     screen.onkey(moveBoatRight, "d")
     screen.onkey(play, "space")
+    screen.onkey(pressP, "p")
     generateObstacles()
     gameLoop()
 
